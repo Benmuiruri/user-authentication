@@ -51,12 +51,12 @@ const Login = (props) => {
 
   const [emailState, dispatchEmail] = useReducer(emailReducer, {
     value: '',
-    isValid: false,
+    isValid: null,
   });
 
   const [passwordState, dispatchPassword] = useReducer(passwordReducer, {
     value: '',
-    isValid: false,
+    isValid: null,
   });
 
   const emailChangeHandler = (event) => {
